@@ -52,13 +52,13 @@ export const reducer = (state = initialState, action) => {
             return Object.assign({}, {game}, {flashCards});
 
         case MAKE_GUESS:
-            let hit = 0;
-            let miss = 0;
             let flashCard = state.flashCards.find(card => card.id === action.payload.id);
 
             if (flashCard.hit !== 0)
                 return state;
 
+            let hit = 0;
+            let miss = 0;
             if (flashCard.word.toUpperCase().trim() === action.payload.guess.toUpperCase().trim()) {
                 hit = 1;
             } else {
@@ -76,7 +76,7 @@ export const reducer = (state = initialState, action) => {
             });
             
             let returnValue = Object.assign({}, {game}, {flashCards});
-            if(state.game.counter.hit + state.game.counter.miss + 1 >= state.game.counter.total)
+            if((state.game.counter.hit || 0) + (state.game.counter.miss || 0) + 1 >= state.game.counter.total)
                 returnValue = reducer(returnValue, { type: FINISH_GAME });
 
             return returnValue;

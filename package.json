@@ -61,7 +61,7 @@
     "scripts": {
         "start": "node scripts/start.js",
         "start:localserver": "REACT_APP_API_URL='http://127.0.0.1:3000/v1' PORT='3001' && npm run start",
-        "build": "REACT_APP_API_URL='http://flashcards-back.herokuapp.com/v1' node scripts/build.js",
+        "build": "REACT_APP_API_URL='https://flashcards-back.herokuapp.com/v1' node scripts/build.js",
         "build:localserver": "REACT_APP_API_URL='http://127.0.0.1:3000/v1' PORT='3001' node scripts/build.js",
         "test": "node scripts/test.js --env=jsdom",
         "test-coverage": "node scripts/test.js --env=jsdom --coverage"

@@ -1,0 +1,9 @@
+.board {
+    display: block;
+    text-align: center;
+    width: 80%;
+    min-width: 18em;
+    height: 100%;
+    min-height: 22em;
+    margin: 8em auto auto;
+}

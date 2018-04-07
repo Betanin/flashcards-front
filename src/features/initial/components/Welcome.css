@@ -1,0 +1,29 @@
+.box {
+    display: block;
+    position: relative;
+    border-radius: 1em;
+    width: 80%;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    background-color: rgb(196, 255, 235);
+    text-align: center;
+    margin: 10em auto auto auto;
+}
+
+.greetings {
+    font-size: 2em;
+    font-weight: bold;
+    margin: auto;
+    padding: 1em;
+}
+
+.text {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.play {
+    border-radius: 0.5em;
+    height: 2em;
+    margin: 2em;
+}

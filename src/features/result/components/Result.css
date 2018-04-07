@@ -1,0 +1,47 @@
+.container {
+    width: 30em;
+    height: 16em;
+    top: calc(50vh - 13em);
+    padding: 1em 2em 1em 2em;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: .5em;
+    text-align: center;
+}
+
+.fails {
+    font-size: 2em;
+    font-weight: bold;
+    margin: .5em;
+}
+
+.hits {
+    font-size: 1em;
+    font-weight: bold;
+    margin: .5em;
+    color: green;
+}
+
+.misses {
+    font-size: 1em;
+    font-weight: bold;
+    margin: .5em;
+    color: red;
+}
+
+.effectiveness {
+    font-size: 1em;
+    font-weight: bold;
+    margin: .5em;
+    color: black;
+}
+
+.replay {
+    border-radius: 0.5em;
+    height: 2em;
+    margin: 1em 0;
+    width: 100%;
+}

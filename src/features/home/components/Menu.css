@@ -1,0 +1,65 @@
+.menu {
+    position: fixed;
+    z-index: 5;
+    display: inline-block;
+    vertical-align: middle;
+    background: #f0f0f0;
+    padding: 3em;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out;
+}
+
+.active {
+    left: 0;
+}
+
+.close {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.close:before {
+    content: '\00D7';
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+    margin: 1em 1em;
+}
+
+.list {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.list a {
+    display: block;
+    padding-right: 1em;
+    margin-right: 1em;
+    line-height: 1;
+    text-decoration: none;
+    color: rgb(255, 68, 68);
+}
+
+.list a:hover {
+    opacity: 0.8;
+}
+
+.list li {
+    float: left;
+    padding: 1em 0;
+    width: 100%;
+}
